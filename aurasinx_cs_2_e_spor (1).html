@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurasınx — Resmi Site (Taslak)</title>
+  <style>
+    :root{
+      --bg:#050505;
+      --card:#0b0b0b;
+      --accent:#00e5df;
+      --muted:#9a9a9a;
+      --glass: rgba(255,255,255,0.03);
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#eaeaea;background:var(--bg);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
+    header{border-bottom:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:64px;height:64px;object-fit:contain;border-radius:8px}
+    .brand h1{font-size:20px;margin:0;letter-spacing:1px}
+    nav ul{display:flex;gap:18px;margin:0;padding:0;list-style:none}
+    nav a{color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:56px 0}
+    .hero .left h2{font-size:40px;margin:0 0 12px}
+    .hero .left p{color:var(--muted);line-height:1.5}
+    .cta{margin-top:18px;display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:10px;font-weight:700;border:0;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#000}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .roster-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+    .player{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,#081212, #071414);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent);font-size:22px}
+    .player h4{margin:0;font-size:16px}
+    .player p{margin:2px 0 0;color:var(--muted);font-size:13px}
+    section{padding:40px 0;border-bottom:1px solid rgba(255,255,255,0.02)}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    .section-title h3{margin:0}
+    .news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .news-card{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));}
+    .news-card h4{margin:0 0 6px}
+    .sponsors{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .sponsors img{height:48px;filter:grayscale(1) opacity(.8)}
+    footer{padding:24px 0;color:var(--muted);text-align:center}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.brand img{width:52px;height:52px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="logo.png" alt="Aurasınx Logo" />
+        <div>
+          <h1>Aurasınx</h1>
+          <div style="font-size:12px;color:var(--muted)">CS2 • Resmi Site Taslak</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Ana Sayfa</a></li>
+          <li><a href="#team">Takım</a></li>
+          <li><a href="#news">Haberler</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="left">
+        <h2>Hoş geldin, Aurasınx savaşçıları.</h2>
+        <p>Profesyonel CS2 takımı Aurasınx için hazırlanmış modern bir site taslağı. Renk paleti ve görseller logonla uyumlu olacak şekilde tasarlandı. Site; kadro, haberler, sponsorlar ve iletişim bölümlerini içerir.</p>
+        <div class="cta">
+          <button class="btn btn-primary" onclick="location.href='#contact'">Bize ulaş</button>
+          <button class="btn btn-ghost" onclick="location.href='#team'">Kadroyu görüntüle</button>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="text-align:center;">
+          <img src="logo.png" alt="logo" style="max-width:100%;height:220px;object-fit:contain" />
+          <p style="color:var(--muted);margin-top:12px">Logo önizleme</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="section-title">
+        <h3>Takım Kadrosu</h3>
+        <div style="color:var(--muted);font-size:13px">Profesyonel oyuncular</div>
+      </div>
+      <div class="roster-grid">
+        <div class="card player">
+          <div class="avatar">KX</div>
+          <div>
+            <h4>KEDUX</h4>
+            <p>In-game Leader</p>
+          </div>
+        </div>
+        <div class="card player">
+          <div class="avatar">CX</div>
+          <div>
+            <h4>CØRPX</h4>
+            <p>AWPer</p>
+          </div>
+        </div>
+        <div class="card player">
+          <div class="avatar">D3</div>
+          <div>
+            <h4>D3XSIM</h4>
+            <p>Entry Fragger</p>
+          </div>
+        </div>
+        <div class="card player">
+          <div class="avatar">XR</div>
+          <div>
+            <h4>XryoN</h4>
+            <p>Rifler</p>
+          </div>
+        </div>
+        <div class="card player">
+          <div class="avatar">Z3</div>
+          <div>
+            <h4>Z3ROX</h4>
+            <p>Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="section-title">
+        <h3>Haberler & Duyurular</h3>
+      </div>
+      <div class="news-grid">
+        <article class="news-card card">
+          <h4>Yeni transfer: CØRPX katıldı</h4>
+          <p style="color:var(--muted);font-size:13px">Genç AWP uzmanı CØRPX, kadroya resmi olarak dahil oldu.</p>
+        </article>
+        <article class="news-card card">
+          <h4>Aurasınx CS2 performansı yükselişte</h4>
+          <p style="color:var(--muted);font-size:13px">Takım son maçlarda üst üste galibiyetler alarak formunu koruyor.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sponsors">
+      <div class="section-title">
+        <h3>Sponsorlar</h3>
+      </div>
+      <div class="card sponsors">
+        <img src="assets/sponsor1.png" alt="Sponsor 1" />
+        <img src="assets/sponsor2.png" alt="Sponsor 2" />
+        <img src="assets/sponsor3.png" alt="Sponsor 3" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h3>İletişim</h3>
+      </div>
+      <div class="card" style="display:grid;grid-template-columns:1fr 320px;gap:18px">
+        <form onsubmit="event.preventDefault();alert('Form gönderimi taslak — backend eklenmeli')">
+          <div style="display:flex;gap:12px;margin-bottom:12px">
+            <input placeholder="Adın" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+            <input placeholder="E-posta" required style="width:220px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+          </div>
+          <textarea placeholder="Mesaj" required style="width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);min-height:120px;background:transparent;color:inherit"></textarea>
+          <div style="margin-top:12px"><button class="btn btn-primary">Gönder</button></div>
+        </form>
+        <div>
+          <h4>Ofis & İletişim</h4>
+          <p style="color:var(--muted);font-size:14px">E-posta: contact@aurasinx.gg</p>
+          <p style="color:var(--muted);font-size:14px">Sosyal: @aurasinx</p>
+          <div style="margin-top:18px">
+            <strong>Hızlı bağlantılar</strong>
+            <ul style="color:var(--muted);font-size:13px">
+              <li>Discord</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div style="text-align:left">
+          <strong>Aurasınx</strong>
+          <div style="color:var(--muted);font-size:13px">© 2025 Tüm hakları saklıdır.</div>
+        </div>
+        <div style="color:var(--muted);font-size:13px">Site taslak — düzenleme için bana hangi bölümü değiştirmek istediğini söyle.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
